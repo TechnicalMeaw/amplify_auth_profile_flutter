@@ -255,16 +255,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
     }
   }
 
-  /*Future<void> getImageUrl(String key) async{
-    try {
-      final result = await Amplify.Storage.getUrl(key: key);
-      print('Storage successful');
-      signUp(result.url);
-      print(result.url);
-    } on StorageException catch (storeError) {
-      print('Storage failed - $storeError');
-    }
-  }*/
+
 
 
   Future<void> signUp() async{

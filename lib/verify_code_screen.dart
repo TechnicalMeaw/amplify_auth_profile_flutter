@@ -55,7 +55,7 @@ class _VerifyCodeScreenState extends State<VerifyCodeScreen> {
 
       if (res.isSignUpComplete){
         await Amplify.Auth.signIn(username: username, password: password);
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const HomeScreen()));
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
         setState(() {
           isLoading = false;
         });
